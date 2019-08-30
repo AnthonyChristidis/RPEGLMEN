@@ -14,6 +14,10 @@ glmnet_exp(A, b, ..., alpha.EN = 0.5, num_lambda = 100L,
 
 \item{b}{The vector of response variables}
 
+\item{...}{Additional Parameters.}
+
+\item{alpha.EN}{the coefficient of elastic net regularizer (1 means lasso)}
+
 \item{num_lambda}{size of the lambda grid}
 
 \item{glm_type}{type of glm model, 1 is exponential, 2 is gamma (not implemented yet)}
@@ -28,7 +32,9 @@ glmnet_exp(A, b, ..., alpha.EN = 0.5, num_lambda = 100L,
 
 \item{k_fold}{the number of folds for cross validation}
 
-\item{alpha}{the coefficient of elastic net regularizer (1 means lasso)}
+\item{has_intercept}{Parameter to determine if there is an intercept (TRUE) or not (FALSE).}
+
+\item{k_fold_iter}{The number of iterations for the cross-validation.}
 }
 \value{
 vector of optimal coefficient for the glm model

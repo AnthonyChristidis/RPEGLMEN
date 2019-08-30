@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // scalarMultiplication
 Eigen::MatrixXd scalarMultiplication(double c, const Eigen::Map<Eigen::MatrixXd>& M);
-RcppExport SEXP _glmExpENRcpp_scalarMultiplication(SEXP cSEXP, SEXP MSEXP) {
+RcppExport SEXP _RPEGLMEN_scalarMultiplication(SEXP cSEXP, SEXP MSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +20,7 @@ END_RCPP
 }
 // addReals
 double addReals(double x, double y);
-RcppExport SEXP _glmExpENRcpp_addReals(SEXP xSEXP, SEXP ySEXP) {
+RcppExport SEXP _RPEGLMEN_addReals(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -32,7 +32,7 @@ END_RCPP
 }
 // fitGlmFixed
 Eigen::MatrixXd fitGlmFixed(const Eigen::MatrixXd& predictor_matrix, const Eigen::VectorXd& response_vector, double alpha, int num_lambda, int glm_type, int max_iter, double abs_tol, double rel_tol, bool normalize_grad, int k_fold);
-RcppExport SEXP _glmExpENRcpp_fitGlmFixed(SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
+RcppExport SEXP _RPEGLMEN_fitGlmFixed(SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -52,7 +52,7 @@ END_RCPP
 }
 // fitGlmCv
 Eigen::MatrixXd fitGlmCv(const Eigen::MatrixXd& predictor_matrix, const Eigen::VectorXd& response_vector, double alpha, int num_lambda, int glm_type, int max_iter, double abs_tol, double rel_tol, bool normalize_grad, int k_fold, bool has_intercept, int k_fold_iter);
-RcppExport SEXP _glmExpENRcpp_fitGlmCv(SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP, SEXP has_interceptSEXP, SEXP k_fold_iterSEXP) {
+RcppExport SEXP _RPEGLMEN_fitGlmCv(SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP, SEXP has_interceptSEXP, SEXP k_fold_iterSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -74,7 +74,7 @@ END_RCPP
 }
 // ExpNegativeLogLikelihood_cpp
 double ExpNegativeLogLikelihood_cpp(const Eigen::VectorXd& x, const Eigen::MatrixXd& predictor_matrix, const Eigen::VectorXd& response_vector, double alpha, int num_lambda, int glm_type, int max_iter, double abs_tol, double rel_tol, bool normalize_grad, int k_fold);
-RcppExport SEXP _glmExpENRcpp_ExpNegativeLogLikelihood_cpp(SEXP xSEXP, SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
+RcppExport SEXP _RPEGLMEN_ExpNegativeLogLikelihood_cpp(SEXP xSEXP, SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -95,7 +95,7 @@ END_RCPP
 }
 // GradExpNegativeLogLikelihood_cpp
 Eigen::VectorXd GradExpNegativeLogLikelihood_cpp(const Eigen::VectorXd& x, const Eigen::MatrixXd& predictor_matrix, const Eigen::VectorXd& response_vector, double alpha, int num_lambda, int glm_type, int max_iter, double abs_tol, double rel_tol, bool normalize_grad, int k_fold);
-RcppExport SEXP _glmExpENRcpp_GradExpNegativeLogLikelihood_cpp(SEXP xSEXP, SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
+RcppExport SEXP _RPEGLMEN_GradExpNegativeLogLikelihood_cpp(SEXP xSEXP, SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP alphaSEXP, SEXP num_lambdaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -116,7 +116,7 @@ END_RCPP
 }
 // ProxGradDescent_cpp
 Eigen::VectorXd ProxGradDescent_cpp(const Eigen::MatrixXd& predictor_matrix, const Eigen::VectorXd& response_vector, double lambda, double alpha, int glm_type, int max_iter, double abs_tol, double rel_tol, bool normalize_grad, int k_fold);
-RcppExport SEXP _glmExpENRcpp_ProxGradDescent_cpp(SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP lambdaSEXP, SEXP alphaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
+RcppExport SEXP _RPEGLMEN_ProxGradDescent_cpp(SEXP predictor_matrixSEXP, SEXP response_vectorSEXP, SEXP lambdaSEXP, SEXP alphaSEXP, SEXP glm_typeSEXP, SEXP max_iterSEXP, SEXP abs_tolSEXP, SEXP rel_tolSEXP, SEXP normalize_gradSEXP, SEXP k_foldSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -136,17 +136,17 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_glmExpENRcpp_scalarMultiplication", (DL_FUNC) &_glmExpENRcpp_scalarMultiplication, 2},
-    {"_glmExpENRcpp_addReals", (DL_FUNC) &_glmExpENRcpp_addReals, 2},
-    {"_glmExpENRcpp_fitGlmFixed", (DL_FUNC) &_glmExpENRcpp_fitGlmFixed, 10},
-    {"_glmExpENRcpp_fitGlmCv", (DL_FUNC) &_glmExpENRcpp_fitGlmCv, 12},
-    {"_glmExpENRcpp_ExpNegativeLogLikelihood_cpp", (DL_FUNC) &_glmExpENRcpp_ExpNegativeLogLikelihood_cpp, 11},
-    {"_glmExpENRcpp_GradExpNegativeLogLikelihood_cpp", (DL_FUNC) &_glmExpENRcpp_GradExpNegativeLogLikelihood_cpp, 11},
-    {"_glmExpENRcpp_ProxGradDescent_cpp", (DL_FUNC) &_glmExpENRcpp_ProxGradDescent_cpp, 10},
+    {"_RPEGLMEN_scalarMultiplication", (DL_FUNC) &_RPEGLMEN_scalarMultiplication, 2},
+    {"_RPEGLMEN_addReals", (DL_FUNC) &_RPEGLMEN_addReals, 2},
+    {"_RPEGLMEN_fitGlmFixed", (DL_FUNC) &_RPEGLMEN_fitGlmFixed, 10},
+    {"_RPEGLMEN_fitGlmCv", (DL_FUNC) &_RPEGLMEN_fitGlmCv, 12},
+    {"_RPEGLMEN_ExpNegativeLogLikelihood_cpp", (DL_FUNC) &_RPEGLMEN_ExpNegativeLogLikelihood_cpp, 11},
+    {"_RPEGLMEN_GradExpNegativeLogLikelihood_cpp", (DL_FUNC) &_RPEGLMEN_GradExpNegativeLogLikelihood_cpp, 11},
+    {"_RPEGLMEN_ProxGradDescent_cpp", (DL_FUNC) &_RPEGLMEN_ProxGradDescent_cpp, 10},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_glmExpENRcpp(DllInfo *dll) {
+RcppExport void R_init_RPEGLMEN(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

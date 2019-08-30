@@ -1,9 +1,9 @@
-Package: glmExpENRcpp
+Package: RPEGLMEN
 Type: Package
 Title: Efficient Implementation of glmnet using Rcpp and RcppEigen
 Version: 0.1.0
-Author: Xin Chen, Daniel Hanson (interface)
-Maintainer: The package maintainer <hansondj@uw.edu>
+Author: Anthony Christidis, Xin Chen, Daniel Hanson
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
 Description: Fit glmnet model using Rcpp and RcppEigen
 License: GPL
 Encoding: UTF-8
@@ -11,3 +11,5 @@ LazyData: true
 Imports: Rcpp (>= 0.12.11)
 LinkingTo: Rcpp, RcppEigen
 RoxygenNote: 6.1.1
+Suggests: 
+    testthat

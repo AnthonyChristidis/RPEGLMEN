@@ -1,3 +1,5 @@
 exportPattern("^[[:alpha:]]+")
 importFrom(Rcpp, evalCpp)
-useDynLib(glmExpENRcpp)
+import(stats)
+import(utils)
+useDynLib(RPEGLMEN)

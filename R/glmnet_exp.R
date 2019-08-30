@@ -2,7 +2,7 @@
 #'
 #' @param A The matrix of independent variables
 #' @param b The vector of response variables
-#' @param alpha the coefficient of elastic net regularizer (1 means lasso)
+#' @param alpha.EN the coefficient of elastic net regularizer (1 means lasso)
 #' @param num_lambda size of the lambda grid
 #' @param glm_type type of glm model, 1 is exponential, 2 is gamma (not implemented yet)
 #' @param max_iter max number of iteration for the prox grad descent optimizer
@@ -10,6 +10,9 @@
 #' @param rel_tol relative error threshold for the pgd optimizer (not used for vanilla PGD)
 #' @param normalize_grad swtich for whether to normalize the gradient or not
 #' @param k_fold the number of folds for cross validation
+#' @param k_fold_iter The number of iterations for the cross-validation.
+#' @param has_intercept Parameter to determine if there is an intercept (TRUE) or not (FALSE).
+#' @param ... Additional Parameters.
 #'
 #' @return vector of optimal coefficient for the glm model
 #' @export
