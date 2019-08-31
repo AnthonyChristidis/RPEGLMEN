@@ -4,7 +4,12 @@ Title: Efficient Implementation of glmnet using Rcpp and RcppEigen
 Version: 0.1.0
 Author: Anthony Christidis, Xin Chen, Daniel Hanson
 Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
-Description: Fit glmnet model using Rcpp and RcppEigen
+Description: Implements the FISTA algorithm to fit a Gamma distribution 
+             with an elastic net penalty as described in Chen, Arakvin and
+             Martin (2018) <https://arxiv.org/abs/1804.07780>. An implementation 
+             for the case of the exponential distribution is also available, with 
+             details available in Chen and Martin (2018) 
+             <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3085672>.
 License: GPL
 Encoding: UTF-8
 LazyData: true

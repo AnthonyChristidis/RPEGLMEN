@@ -37,7 +37,7 @@ fit.glmGammaNet(A, b, exponential.dist = FALSE, alpha.EN = 0.5,
 
 \item{k_fold_iter}{The number of iterations for the cross-validation.}
 
-\item{min.lambda.ratio}{}
+\item{min.lambda.ratio}{Minimum lambda ratio for cross-validation.}
 
 \item{...}{Additional parameters.}
 }
