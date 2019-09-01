@@ -65,7 +65,7 @@ Eigen::MatrixXd fitGlmFixed(const Eigen::MatrixXd& predictor_matrix,
   return X;
 }
 
-// [[Rcpp::export]]
+// [[Rcpp::export]]  
 Eigen::MatrixXd fitGlmCv(const Eigen::MatrixXd& predictor_matrix,
                             const Eigen::VectorXd& response_vector,
                             double alpha = 1, int num_lambda = 100, int glm_type = 1,

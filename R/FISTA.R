@@ -1,7 +1,4 @@
-## This is the R implementation of FISTA, based on
-## https://people.rennes.inria.fr/Cedric.Herzet/Cedric.Herzet/Sparse_Seminar/Entrees/2012/11/12_A_Fast_Iterative_Shrinkage-Thresholding_Algorithmfor_Linear_Inverse_Problems_(A._Beck,_M._Teboulle)_files/Breck_2009.pdf
-## Author: Xin Chen
-## 03/21/2018
+## This is the R implementation of FISTA
 FISTA = function(x0, f, g, f_grad, g_prox, ABSTOL = 1e-8, maxiter = 1000){
   lambda = 1
   beta = 0.5

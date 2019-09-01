@@ -2,7 +2,7 @@
 % Please edit documentation in R/glmGammaNet.R
 \name{fit.glmGammaNet}
 \alias{fit.glmGammaNet}
-\title{Fit glmnet model for Gamma distributed response data.}
+\title{Elastic Net Penalized Gamma or Exponentially Distributed Response Variables}
 \usage{
 fit.glmGammaNet(A, b, exponential.dist = FALSE, alpha.EN = 0.5,
   num_lambda = 100L, glm_type = 1L, max_iter = 100L,
@@ -45,5 +45,5 @@ fit.glmGammaNet(A, b, exponential.dist = FALSE, alpha.EN = 0.5,
 vector of optimal coefficient for the glm model
 }
 \description{
-Fit glmnet model for Gamma distributed response data.
+\code{git.glmGammaNet} Fit glmnet model for Gamma distributed response data.
 }

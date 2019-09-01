@@ -1,4 +1,13 @@
-#' Fit glmnet model for Gamma distributed response data.
+#' @useDynLib RPEGLMEN, .registration = TRUE
+#' @importFrom Rcpp evalCpp
+NULL
+#'
+#' @import stats
+#' @import utils
+
+#' @title Elastic Net Penalized Gamma or Exponentially Distributed Response Variables
+#'
+#' @description \code{git.glmGammaNet} Fit glmnet model for Gamma distributed response data.
 #'
 #' @param A The matrix of independent variables.
 #' @param b The vector of response variables.
@@ -17,7 +26,9 @@
 #' @param ... Additional parameters.
 #'
 #' @return vector of optimal coefficient for the glm model
+#' 
 #' @export
+#' 
 fit.glmGammaNet <- function(A,
                             b,
                             exponential.dist = FALSE,

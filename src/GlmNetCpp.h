@@ -6,7 +6,7 @@
 
 /*
  * File:   glmnetcpp.h
- * Author: Xin Chen
+ * Author: Xin Chen 
  *
  * Created on June 2, 2017, 6:39 PM
  */

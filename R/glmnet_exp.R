@@ -15,10 +15,11 @@
 #' @param ... Additional Parameters.
 #'
 #' @return vector of optimal coefficient for the glm model
+#' 
 #' @export
+#' 
 glmnet_exp = function(A,
                       b,
-                      ...,
                       alpha.EN = 0.5,
                       num_lambda = 100L,
                       glm_type = 1L,
@@ -28,7 +29,8 @@ glmnet_exp = function(A,
                       normalize_grad = FALSE,
                       k_fold = 5L,
                       has_intercept = TRUE,
-                      k_fold_iter = 5L){
+                      k_fold_iter = 5L,
+                      ...){
   return(fitGlmCv(A,
          b,
          alpha = alpha.EN,
