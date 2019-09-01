@@ -24,3 +24,4 @@ Suggests:
 NeedsCompilation: yes
 Biarch: true
 SystemRequirements: C++11
+VignetteBuilder: R.rsp
