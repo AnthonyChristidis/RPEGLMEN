@@ -4,17 +4,15 @@
 \alias{glmnet_exp}
 \title{fit glmnet model for exponetially distributed response data}
 \usage{
-glmnet_exp(A, b, ..., alpha.EN = 0.5, num_lambda = 100L,
-  glm_type = 1L, max_iter = 100L, abs_tol = 1e-04, rel_tol = 0.01,
+glmnet_exp(A, b, alpha.EN = 0.5, num_lambda = 100L, glm_type = 1L,
+  max_iter = 100L, abs_tol = 1e-04, rel_tol = 0.01,
   normalize_grad = FALSE, k_fold = 5L, has_intercept = TRUE,
-  k_fold_iter = 5L)
+  k_fold_iter = 5L, ...)
 }
 \arguments{
 \item{A}{The matrix of independent variables}
 
 \item{b}{The vector of response variables}
-
-\item{...}{Additional Parameters.}
 
 \item{alpha.EN}{the coefficient of elastic net regularizer (1 means lasso)}
 
@@ -35,6 +33,8 @@ glmnet_exp(A, b, ..., alpha.EN = 0.5, num_lambda = 100L,
 \item{has_intercept}{Parameter to determine if there is an intercept (TRUE) or not (FALSE).}
 
 \item{k_fold_iter}{The number of iterations for the cross-validation.}
+
+\item{...}{Additional Parameters.}
 }
 \value{
 vector of optimal coefficient for the glm model

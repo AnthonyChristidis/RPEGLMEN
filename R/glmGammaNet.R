@@ -45,6 +45,13 @@ fit.glmGammaNet <- function(A,
                             min.lambda.ratio = 1e-4,
                             ...){
   
+  # Testing input for independent variables
+  if(!is.matrix(A))
+    stop("A must be a matrix.")
+  # Testing input for response variable
+  if(!is.vector(b))
+    stop("b must be a vector of responses.")
+  
   # Case where the alpha turning parameter for the distribution is 1 - Exponential distribution
   if(exponential.dist){
     

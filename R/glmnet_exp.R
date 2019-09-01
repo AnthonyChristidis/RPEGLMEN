@@ -31,6 +31,14 @@ glmnet_exp = function(A,
                       has_intercept = TRUE,
                       k_fold_iter = 5L,
                       ...){
+  
+  # Testing input for independent variables
+  if(!is.matrix(A))
+    stop("A must be a matrix.")
+  # Testing input for response variable
+  if(!is.vector(b))
+    stop("b must be a vector of responses.")
+  
   return(fitGlmCv(A,
          b,
          alpha = alpha.EN,
