@@ -2,7 +2,7 @@
 % Please edit documentation in R/glmnet_exp.R
 \name{glmnet_exp}
 \alias{glmnet_exp}
-\title{fit glmnet model for exponetially distributed response data}
+\title{Elastic Net Penalized Exponentially Distributed Response Variables}
 \usage{
 glmnet_exp(A, b, alpha.EN = 0.5, num_lambda = 100L, glm_type = 1L,
   max_iter = 100L, abs_tol = 1e-04, rel_tol = 0.01,
@@ -10,25 +10,25 @@ glmnet_exp(A, b, alpha.EN = 0.5, num_lambda = 100L, glm_type = 1L,
   k_fold_iter = 5L, ...)
 }
 \arguments{
-\item{A}{The matrix of independent variables}
+\item{A}{The matrix of independent variables.}
 
-\item{b}{The vector of response variables}
+\item{b}{The vector of response variables.}
 
-\item{alpha.EN}{the coefficient of elastic net regularizer (1 means lasso)}
+\item{alpha.EN}{The coefficient of elastic net regularizer (1 means lasso).}
 
-\item{num_lambda}{size of the lambda grid}
+\item{num_lambda}{Size of the lambda grid.}
 
-\item{glm_type}{type of glm model, 1 is exponential, 2 is gamma (not implemented yet)}
+\item{glm_type}{Type of glm model, 1 is exponential, 2 is gamma (not implemented yet).}
 
-\item{max_iter}{max number of iteration for the prox grad descent optimizer}
+\item{max_iter}{Max number of iteration for the prox grad descent optimizer.}
 
-\item{abs_tol}{absolute error threshold for the pgd optimizer}
+\item{abs_tol}{Absolute error threshold for the pgd optimizer.}
 
-\item{rel_tol}{relative error threshold for the pgd optimizer (not used for vanilla PGD)}
+\item{rel_tol}{Relative error threshold for the pgd optimizer (not used for vanilla PGD).}
 
-\item{normalize_grad}{swtich for whether to normalize the gradient or not}
+\item{normalize_grad}{Swtich for whether to normalize the gradient or not.}
 
-\item{k_fold}{the number of folds for cross validation}
+\item{k_fold}{The number of folds for cross validation.}
 
 \item{has_intercept}{Parameter to determine if there is an intercept (TRUE) or not (FALSE).}
 
@@ -37,8 +37,8 @@ glmnet_exp(A, b, alpha.EN = 0.5, num_lambda = 100L, glm_type = 1L,
 \item{...}{Additional Parameters.}
 }
 \value{
-vector of optimal coefficient for the glm model
+Vector of optimal coefficient for the glm model.
 }
 \description{
-fit glmnet model for exponetially distributed response data
+\code{git.glmGammaNet} Fit glmnet model for exponentiall distributed response data.
 }

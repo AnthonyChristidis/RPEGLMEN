@@ -1,24 +1,27 @@
-#' fit glmnet model for exponetially distributed response data
+
+#' @title Elastic Net Penalized Exponentially Distributed Response Variables
 #'
-#' @param A The matrix of independent variables
-#' @param b The vector of response variables
-#' @param alpha.EN the coefficient of elastic net regularizer (1 means lasso)
-#' @param num_lambda size of the lambda grid
-#' @param glm_type type of glm model, 1 is exponential, 2 is gamma (not implemented yet)
-#' @param max_iter max number of iteration for the prox grad descent optimizer
-#' @param abs_tol absolute error threshold for the pgd optimizer
-#' @param rel_tol relative error threshold for the pgd optimizer (not used for vanilla PGD)
-#' @param normalize_grad swtich for whether to normalize the gradient or not
-#' @param k_fold the number of folds for cross validation
+#' @description \code{git.glmGammaNet} Fit glmnet model for exponentiall distributed response data.
+#'
+#' @param A The matrix of independent variables.
+#' @param b The vector of response variables.
+#' @param alpha.EN The coefficient of elastic net regularizer (1 means lasso).
+#' @param num_lambda Size of the lambda grid.
+#' @param glm_type Type of glm model, 1 is exponential, 2 is gamma (not implemented yet).
+#' @param max_iter Max number of iteration for the prox grad descent optimizer.
+#' @param abs_tol Absolute error threshold for the pgd optimizer.
+#' @param rel_tol Relative error threshold for the pgd optimizer (not used for vanilla PGD).
+#' @param normalize_grad Swtich for whether to normalize the gradient or not.
+#' @param k_fold The number of folds for cross validation.
 #' @param k_fold_iter The number of iterations for the cross-validation.
 #' @param has_intercept Parameter to determine if there is an intercept (TRUE) or not (FALSE).
 #' @param ... Additional Parameters.
 #'
-#' @return vector of optimal coefficient for the glm model
+#' @return Vector of optimal coefficient for the glm model.
 #' 
 #' @export
 #' 
-glmnet_exp = function(A,
+glmnet_exp <- function(A,
                       b,
                       alpha.EN = 0.5,
                       num_lambda = 100L,

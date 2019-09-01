@@ -25,7 +25,7 @@ NULL
 #' @param min.lambda.ratio Minimum lambda ratio for cross-validation.
 #' @param ... Additional parameters.
 #'
-#' @return vector of optimal coefficient for the glm model
+#' @return vector of optimal coefficient for the glm model.
 #' 
 #' @export
 #' 

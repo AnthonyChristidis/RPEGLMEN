@@ -42,7 +42,7 @@ fit.glmGammaNet(A, b, exponential.dist = FALSE, alpha.EN = 0.5,
 \item{...}{Additional parameters.}
 }
 \value{
-vector of optimal coefficient for the glm model
+vector of optimal coefficient for the glm model.
 }
 \description{
 \code{git.glmGammaNet} Fit glmnet model for Gamma distributed response data.
