@@ -102,7 +102,7 @@ test.mat <- apply(edhec, 2, IF.ES)
 test.mat <- apply(test.mat, 2, as.numeric)
 
 # Returning the standard errors from the Gamma distribution fit
-apply(test.mat, 2, SE.Gamma)
+# apply(test.mat, 2, SE.Gamma)
 
 }
 \author{
