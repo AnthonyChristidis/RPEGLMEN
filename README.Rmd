@@ -43,6 +43,9 @@ This package is designed to prove the
 ``` r
 # Sample Code
 
+# Load the package
+library(RPEGLMEN)
+
 # Function to return the periodogram of data series
 myperiodogram <- function (data, max.freq = 0.5, twosided = FALSE, keep = 1){
   data.fft <- fft(data)

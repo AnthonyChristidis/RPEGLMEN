@@ -23,10 +23,17 @@ library(devtools)
 devtools::install_github("AnthonyChristidis/RPEGLMEN")
 ```
 
+### Background Information
+
+This package is designed to prove the
+
 ### Usage
 
 ``` r
 # Sample Code
+
+# Load the package
+library(RPEGLMEN)
 
 # Function to return the periodogram of data series
 myperiodogram <- function (data, max.freq = 0.5, twosided = FALSE, keep = 1){
