@@ -1,7 +1,7 @@
 Package: RPEGLMEN
 Type: Package
 Title: Efficient Implementation of glmnet using Rcpp and RcppEigen
-Version: 0.1.0
+Version: 1.0
 Date: 2019-08-30
 Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>, 
   Xin Chen <chenx26@uw.edu>, 
