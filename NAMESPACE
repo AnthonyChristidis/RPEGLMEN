@@ -2,6 +2,8 @@
 
 export(fit.glmGammaNet)
 export(glmnet_exp)
+import(PerformanceAnalytics)
+import(RPEIF)
 import(stats)
 import(utils)
 importFrom(Rcpp,evalCpp)
