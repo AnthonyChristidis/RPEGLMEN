@@ -1,6 +1,6 @@
 Package: RPEGLMEN
 Type: Package
-Title: Gamma And Exponential GLM Fit With Elastic Net
+Title: Gamma and Exponential GLM Fit with Elastic Net
 Version: 1.0
 Date: 2019-08-30
 Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>, 
