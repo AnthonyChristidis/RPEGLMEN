@@ -7,12 +7,9 @@ if test -z "${R_HOME}"; then
 fi
 
 CXX=`"${R_HOME}/bin/R" CMD config CXX`
-CXXCPP=`"${R_HOME}/bin/R" CMD config CXXCPP`
 CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXXFLAGS`
-CPPFLAGS=`"${R_HOME}/bin/R" CMD config CPPFLAGS`
 
 AC_PROG_CXX
-AC_PROG_CXXCPP
 
 AC_LANG(C++)
 
