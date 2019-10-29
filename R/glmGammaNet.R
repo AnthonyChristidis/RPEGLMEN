@@ -1,9 +1,8 @@
 #' @useDynLib RPEGLMEN, .registration = TRUE
 #' @importFrom Rcpp evalCpp
 NULL
-#'
-#' @import stats
-#' @import utils
+#' @importFrom stats dgamma optim sd
+#' @importFrom utils head tail
 #' @import RPEIF
 #' @import PerformanceAnalytics
 
