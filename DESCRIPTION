@@ -1,8 +1,8 @@
 Package: RPEGLMEN
 Type: Package
 Title: Gamma and Exponential Generalized Linear Models with Elastic Net Penalty
-Version: 1.0
-Date: 2019-08-30
+Version: 1.0.1
+Date: 2019-14-12
 Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>, 
   Xin Chen <chenx26@uw.edu>, 
   Daniel Hanson <hansondj@uw.edu>
