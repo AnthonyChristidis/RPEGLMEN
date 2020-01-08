@@ -1,8 +1,8 @@
 /* confdefs.h */
 #define PACKAGE_NAME "RPEGLMEN"
 #define PACKAGE_TARNAME "RPEGLMEN"
-#define PACKAGE_VERSION "1.0.1"
-#define PACKAGE_STRING "rpeglmen 1.0.1"
+#define PACKAGE_VERSION "1.0.0"
+#define PACKAGE_STRING "rpeglmen 1.0.0"
 #define PACKAGE_BUGREPORT ""
 #define PACKAGE_URL ""
 #define STDC_HEADERS 1

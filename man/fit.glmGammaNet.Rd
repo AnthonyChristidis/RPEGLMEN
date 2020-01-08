@@ -4,11 +4,23 @@
 \alias{fit.glmGammaNet}
 \title{Elastic Net Penalized Gamma or Exponentially Distributed Response Variables}
 \usage{
-fit.glmGammaNet(A, b, exponential.dist = FALSE, alpha.EN = 0.5,
-  num_lambda = 100L, glm_type = 1L, max_iter = 100L,
-  abs_tol = 1e-04, rel_tol = 0.01, normalize_grad = FALSE,
-  k_fold = 5L, has_intercept = TRUE, k_fold_iter = 5L,
-  min.lambda.ratio = 1e-04, ...)
+fit.glmGammaNet(
+  A,
+  b,
+  exponential.dist = FALSE,
+  alpha.EN = 0.5,
+  num_lambda = 100L,
+  glm_type = 1L,
+  max_iter = 100L,
+  abs_tol = 1e-04,
+  rel_tol = 0.01,
+  normalize_grad = FALSE,
+  k_fold = 5L,
+  has_intercept = TRUE,
+  k_fold_iter = 5L,
+  min.lambda.ratio = 1e-04,
+  ...
+)
 }
 \arguments{
 \item{A}{The matrix of independent variables.}

@@ -18,7 +18,7 @@ Encoding: UTF-8
 LazyData: true
 Imports: Rcpp (>= 1.0.2), RPEIF, PerformanceAnalytics
 LinkingTo: Rcpp, RcppEigen
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Suggests: R.rsp,
     testthat
 NeedsCompilation: yes
