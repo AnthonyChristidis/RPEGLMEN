@@ -5,3 +5,5 @@
 ^README\.Rmd$
 ^README-.*\.png$
 ^\.travis\.yml$
+
+src/*.dll
