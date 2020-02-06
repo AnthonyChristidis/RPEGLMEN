@@ -103,12 +103,12 @@ data(edhec, package = "PerformanceAnalytics")
 colnames(edhec)
 
 # Computing the expected shortfall for the time series of returns
-library(RPEIF)
-test.mat <- apply(edhec, 2, IF.ES)
-test.mat <- apply(test.mat, 2, as.numeric)
+# library(RPEIF)
+# test.mat <- apply(edhec, 2, IF.ES)
+# test.mat <- apply(test.mat, 2, as.numeric)
 
 # Returning the standard errors from the Exponential distribution fit
-apply(test.mat, 2, SE.Exponential)
+# apply(test.mat, 2, SE.Exponential)
 
 }
 \author{
