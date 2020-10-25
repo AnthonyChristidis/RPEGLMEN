@@ -4,8 +4,7 @@ NULL
 #' @importFrom stats dgamma optim sd
 #' @importFrom utils head tail
 #' @import RPEIF
-#' @import PerformanceAnalytics
-
+#'
 #' @title Elastic Net Penalized Gamma or Exponentially Distributed Response Variables
 #'
 #' @description \code{git.glmGammaNet} Fit glmnet model for Gamma distributed response data.
@@ -79,7 +78,7 @@ NULL
 #' }
 #' 
 #' # Loading hedge fund data from PA
-#' data(edhec, package = "PerformanceAnalytics")
+#' data(edhec, package = "RPEIF")
 #' colnames(edhec)
 #' 
 #' # Computing the expected shortfall for the time series of returns

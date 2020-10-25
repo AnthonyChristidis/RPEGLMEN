@@ -105,7 +105,7 @@ SE.Gamma <- function(data, d = 7, alpha = 0.5, keep = 1){
 }
 
 # Loading hedge fund data from PA
-data(edhec, package = "PerformanceAnalytics")
+data(edhec, package = "RPEIF")
 colnames(edhec)
 
 # Computing the expected shortfall for the time series of returns

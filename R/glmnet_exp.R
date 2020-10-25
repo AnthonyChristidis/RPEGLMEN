@@ -70,7 +70,7 @@
 #' }
 #' 
 #' # Loading hedge fund data from PA
-#' data(edhec, package = "PerformanceAnalytics")
+#' data(edhec, package = "RPEIF")
 #' colnames(edhec)
 #' 
 #' # Computing the expected shortfall for the time series of returns
