@@ -99,7 +99,7 @@ SE.Exponential <- function(data, d = 7, alpha = 0.5, keep = 1){
 }
 
 # Loading hedge fund data from PA
-data(edhec, package = "RPEIF")
+data(edhec, package = "PerformanceAnalytics")
 colnames(edhec)
 
 # Computing the expected shortfall for the time series of returns

@@ -1,8 +1,8 @@
 Package: RPEGLMEN
 Type: Package
 Title: Gamma and Exponential Generalized Linear Models with Elastic Net Penalty
-Version: 1.1.0
-Date: 2020-10-25
+Version: 1.1.1
+Date: 2021-05-13
 Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>, 
   Xin Chen <chenx26@uw.edu>, 
   Daniel Hanson <hansondj@uw.edu>
@@ -20,7 +20,8 @@ Imports: Rcpp (>= 1.0.2), RPEIF
 LinkingTo: Rcpp, RcppEigen
 RoxygenNote: 7.0.2
 Suggests: R.rsp,
-    testthat
+    testthat,
+    PerformanceAnalytics
 NeedsCompilation: yes
 Biarch: true
 SystemRequirements: C++11

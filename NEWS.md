@@ -6,3 +6,6 @@
 
 # RPEGLMEN 1.1.0
 * Adapt package to RPEIF 1.1.0.
+
+# RPEGLMEN 1.1.1
+* Fix loading of edhec package.
