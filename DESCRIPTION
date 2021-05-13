@@ -15,7 +15,6 @@ Description: Implements the fast iterative shrinkage-thresholding algorithm
              in Chen and Martin (2018) <https://papers.ssrn.com/abstract_id=3085672>.
 License: GPL (>= 2)
 Encoding: UTF-8
-LazyData: true
 Imports: Rcpp (>= 1.0.2), RPEIF
 LinkingTo: Rcpp, RcppEigen
 RoxygenNote: 7.0.2
