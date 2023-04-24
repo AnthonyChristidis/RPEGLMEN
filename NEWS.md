@@ -9,3 +9,6 @@
 
 # RPEGLMEN 1.1.1
 * Fix loading of edhec package.
+
+# RPEGLMEN 1.1.2
+* Remove system requirements (C++11)

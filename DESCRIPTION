@@ -1,8 +1,8 @@
 Package: RPEGLMEN
 Type: Package
 Title: Gamma and Exponential Generalized Linear Models with Elastic Net Penalty
-Version: 1.1.1
-Date: 2021-05-13
+Version: 1.1.2
+Date: 2023-01-28
 Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>, 
   Xin Chen <chenx26@uw.edu>, 
   Daniel Hanson <hansondj@uw.edu>
@@ -15,7 +15,7 @@ Description: Implements the fast iterative shrinkage-thresholding algorithm
              in Chen and Martin (2018) <https://papers.ssrn.com/abstract_id=3085672>.
 License: GPL (>= 2)
 Encoding: UTF-8
-Imports: Rcpp (>= 1.0.2), RPEIF
+Imports: Rcpp (>= 1.0.3), RPEIF
 LinkingTo: Rcpp, RcppEigen
 RoxygenNote: 7.0.2
 Suggests: R.rsp,
@@ -23,5 +23,4 @@ Suggests: R.rsp,
     PerformanceAnalytics
 NeedsCompilation: yes
 Biarch: true
-SystemRequirements: C++11
 VignetteBuilder: R.rsp

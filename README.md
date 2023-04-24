@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/AnthonyChristidis/RPEGLMEN.svg?branch=master)](https://travis-ci.com/AnthonyChristidis/RPEGLMEN) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/RPEGLMEN)](https://cran.r-project.org/package=RPEGLMEN) [![Downloads](http://cranlogs.r-pkg.org/badges/RPEGLMEN)](https://cran.r-project.org/package=RPEGLMEN)
+[![Build Status](https://app.travis-ci.com/AnthonyChristidis/RPEGLMEN.svg?branch=master)](https://app.travis-ci.com/AnthonyChristidis/RPEGLMEN) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/RPEGLMEN)](https://cran.r-project.org/package=RPEGLMEN) [![Downloads](http://cranlogs.r-pkg.org/badges/RPEGLMEN)](https://cran.r-project.org/package=RPEGLMEN)
 
 RPEGLMEN
 ========

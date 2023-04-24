@@ -3,7 +3,6 @@
 // [[Rcpp::depends(RcppEigen)]]
 using Eigen::MatrixXd;
 
-// [[Rcpp::plugins(cpp14)]]
 double MyClass::add(double x, double y)
 {
   double z = x + y;

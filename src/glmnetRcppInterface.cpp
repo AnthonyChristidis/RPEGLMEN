@@ -22,7 +22,6 @@
 // well to expose the entire namespace; should be avoided!
 
 // Enable C++14 via this plugin
-// [[Rcpp::plugins(cpp14)]]
 using std::tuple;
 
 // [[Rcpp::depends(RcppEigen)]]
