@@ -60,6 +60,7 @@ myperiodogram <- function (data, max.freq = 0.5,
   data.fft <- fft(data)
   N <- length(data)
   tmp <- Mod(data.fft[2:floor(N/2)])^2/N
+  tmp <- sapply(tmp, function(x) max(1e-05, x))
   freq <- ((1:(floor(N/2) - 1))/N)
   tmp <- tmp[1:floor(length(tmp) * keep)]
   freq <- freq[1:floor(length(freq) * keep)]
@@ -98,17 +99,20 @@ SE.Exponential <- function(data, d = 7, alpha = 0.5, keep = 1){
   return(sqrt(exp(res[1])/N))
 }
 
-# Loading hedge fund data from PA
-data(edhec, package = "PerformanceAnalytics")
-colnames(edhec)
-
-# Computing the expected shortfall for the time series of returns
-# library(RPEIF)
-# test.mat <- apply(edhec, 2, IF.ES)
-# test.mat <- apply(test.mat, 2, as.numeric)
-
-# Returning the standard errors from the Exponential distribution fit
-# apply(test.mat, 2, SE.Exponential)
+# Examples using PerformanceAnalytics data
+if (requireNamespace("PerformanceAnalytics", quietly = TRUE)) {
+  # Loading hedge fund data from PA
+  data(edhec, package = "PerformanceAnalytics")
+  colnames(edhec)
+  
+  # Computing the expected shortfall for the time series of returns
+  # library(RPEIF)
+  # test.mat <- apply(edhec, 2, IF.ES)
+  # test.mat <- apply(test.mat, 2, as.numeric)
+  
+  # Returning the standard errors from the Exponential distribution fit
+  # apply(test.mat, 2, SE.Exponential)
+}
 
 }
 \author{

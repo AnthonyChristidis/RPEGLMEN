@@ -12,3 +12,12 @@
 
 # RPEGLMEN 1.1.2
 * Remove system requirements (C++11)
+
+# RPEGLMEN 1.1.3
+* Fixed bashisms in configure files.
+
+# RPEGLMEN 1.1.4
+* Removed redundant Maintainer field from DESCRIPTION (already specified in Authors@R).
+* Added Encoding: UTF-8 to DESCRIPTION.
+* Updated examples to conditionally check for PerformanceAnalytics availability using requireNamespace(), ensuring compatibility with noSuggests CRAN checks.
+* Package now compatible with RPEIF 1.2.6.
